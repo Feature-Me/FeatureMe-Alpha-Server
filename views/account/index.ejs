@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><%=data.name%> - Feature Me</title>
+	<link rel="stylesheet" href="/share/style.css">
+	<link rel="stylesheet" href="/account/style.css">
+</head>
+<body>
+	<header>
+		Feature Me Alpha - User : <%=data.name%>
+	</header>
+	<div id="main">
+		<form onsubmit="searchuser();return false;">
+			<div class="cp_iptxt">
+	            Search User...
+	            <input class="ef" type="text" name="name" placeholder="">
+	            <span class="focus_line"></span>
+	        </div>
+		</form>
+		<h1><%=data.name%></h1>
+		<p>UID:<%=data.id%></p>
+		<p>Level:<%=data.level%> : <%=data.requiredexp - data.exp%> exp remaining to the next level</p>
+		<p>Total EXP:<%=data.exp%></p>
+		<p>Rating:<%=data.rating%></p>
+		<p>Favorite Users:
+			<%for(const i of data.favorite){%>
+				<span onclick="location.href=`https://FeatureMe-Server.mksksub.repl.co/account/${i}`"><%=i%></span>
+			<%}%>				
+		</p>
+		<p>Rating Best: <%=data.ratingBest.join('　　');%></p>
+		<p>Rating Recent: <%=data.ratingRecent.join('　　');%></p>
+		
+	</div>
+
+<script src="/account/script.js"></script>
+</body>
+</html>

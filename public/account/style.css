@@ -1,0 +1,18 @@
+#main{
+	padding:32px;
+	font-size:1.25em;
+	height:calc(100% - 24px - 64px);
+}
+form{
+	position:absolute;
+	top:32px;
+	right:8px;
+	width:30%;
+	
+}
+.cp_iptxt{
+	width:100%!important;
+}
+h1{
+	font-weight:bold;
+}

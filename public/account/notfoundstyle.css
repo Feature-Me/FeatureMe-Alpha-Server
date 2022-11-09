@@ -1,0 +1,8 @@
+#main{
+	text-align:center;
+	padding-top:15%
+}
+.cp_iptxt{
+	margin-left:50%;
+	transform:translate(-50%,0)
+}

@@ -1,0 +1,23 @@
+{
+  "name": "feature-me-leaderboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mksk & Raetan",
+  "license": "MIT",
+  "dependencies": {
+    "@keyv/sqlite": "^2.0.3",
+    "@replit/database": "^2.0.1",
+    "asar": "^3.1.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "keyv": "^4.0.4",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

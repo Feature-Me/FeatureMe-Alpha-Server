@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> <%=data.name%> - Feature Me</title>
+	<link rel="stylesheet" href="/share/style.css">
+	<link rel="stylesheet" href="/account/style.css">
+	<link rel="stylesheet" href="/account/notfoundstyle.css">
+</head>
+<body>
+	<header>
+		Feature Me Alpha - User : <%=data.name%>
+	</header>
+	<div id="main">
+		<h1><%=data.name%></h1>
+		<p>このユーザーは存在しません.他のものを探してみましょう.</p>
+
+		<form onsubmit="searchuser();return false;">
+			<div class="cp_iptxt">
+	            Search User...
+	            <input class="ef" type="text" name="name" placeholder="">
+	            <span class="focus_line"></span>
+	        </div>
+		</form>
+	</div>
+
+<script src="/account/script.js"></script>
+</body>
+</html>

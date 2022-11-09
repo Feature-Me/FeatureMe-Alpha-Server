@@ -1,0 +1,30 @@
+
+.content{
+	padding: 4px;
+	margin: 4px;
+	padding-left: 16px;
+	background-color: #aaaa;
+	border-radius: 4px;
+	white-space: nowrap;
+	height: 36px;
+	transition: 0.3s;
+}
+.content span{
+	display: inline-block;
+	line-height: 36px;
+}
+.content:hover{
+	background-color: #03a7ebaa
+}
+.score,.rank,.title,.user{
+	width: 20%;
+	text-align: center;
+	white-space: nowrap;
+	overflow: auto;
+}
+.time{
+	width: calc(100% - 82%);
+	text-align: center;
+	white-space: nowrap;
+	overflow: auto;
+}
