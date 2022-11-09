@@ -1,12 +1,9 @@
 const Database = require("@replit/database")
 const express = require('express');
 const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-const keyv = require('keyv');
 const bodyParser = require('body-parser');
 const xhr = new XMLHttpRequest();
 const app = express();
-//const leaderboarddb = new keyv('sqlite://db.sqlite',{table:"leaderboard"})
-//const userdb = new keyv('sqlite://db.sqlite',{table:"user"})
 const path = require('path');
 const crypto = require('crypto');
 const  cors = require('cors');
